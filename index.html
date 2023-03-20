@@ -17,7 +17,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./css/stylesmobi.css" />
+    <link rel="stylesheet" href="./css/styles-adaptive.css" />
   </head>
 
   <body class="page">
@@ -29,6 +29,83 @@
           <a class="logo" href="./index.html"
             ><span class="web">WEB</span><span class="studio">STUDIO</span></a
           >
+          <div class="mobile-menu">
+            <button
+              type="button"
+              class="menu-button"
+              aria-expanded
+              aria-controls="menu-container"
+              js-open-menu
+            >
+              <svg class="icon-menu" width="32px" height="22px">
+                <use href="./images/icons.svg#icon-menu" class="menu-btn"></use>
+              </svg>
+            </button>
+            <div class="menu-container" id="menu-container" js-menu-container>
+              <div class="header-container">
+                <button class="menu-cross" js-close-menu>
+                  <svg class="cross-icon">
+                    <use
+                      href="./images/icons.svg#icon-close"
+                      class="cross-btn"
+                    ></use>
+                  </svg>
+                </button>
+                <ul class="site-nav-mobi list">
+                  <li class="item">
+                    <a href="./index.html" class="link">Studio</a>
+                  </li>
+                  <li class="item">
+                    <a href="./portfolio.html" class="link">Portfolio</a>
+                  </li>
+                  <li class="item">
+                    <a href="" class="link active">Contacts</a>
+                  </li>
+                </ul>
+
+                <div class="header-mobi-container">
+                  <address class="main-contacts-mobi">
+                    <ul class="contacts list">
+                      <li class="item tel">
+                        <a href="tel:+110001111111" class="link">
+                          +11 (000) 111-11-11</a
+                        >
+                      </li>
+                      <li class="item mail">
+                        <a href="mailto:info@devstudio.com" class="link"
+                          >info@devstudio.com</a
+                        >
+                      </li>
+                    </ul>
+                  </address>
+
+                  <ul class="svg-container-mobi list">
+                    <li class="item">
+                      <svg class="social-mobi" tabindex="0">
+                        <use href="./images/icons.svg#icon-instdark"></use>
+                      </svg>
+                    </li>
+                    <li class="item">
+                      <svg class="social-mobi" tabindex="0">
+                        <use href="./images/icons.svg#icon-twitdark"></use>
+                      </svg>
+                    </li>
+                    <li class="item">
+                      <svg class="social-mobi" tabindex="0">
+                        <use href="./images/icons.svg#icon-facedark"></use>
+                      </svg>
+                    </li>
+                    <li class="item">
+                      <svg class="social-mobi" tabindex="0">
+                        <use href="./images/icons.svg#icon-indark"></use>
+                      </svg>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <ul class="site-nav list">
             <li class="item nav-studio">
               <a href="./index.html" class="link active">Studio</a>
@@ -480,5 +557,6 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
