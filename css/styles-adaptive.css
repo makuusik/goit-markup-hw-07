@@ -163,7 +163,6 @@
     font-weight: 500;
   }
 
-  /* 1 */
   .team-list .text {
     margin-top: 0;
     margin-bottom: 0;
@@ -221,8 +220,6 @@
   .team-list .item + .item {
     margin-top: 72px;
   }
-
-  /* 2222222222222222222222222 */
 
   .footer-logo-text {
     display: flex;
@@ -452,10 +449,6 @@
 
   .link.active {
     color: var(--sec-header-button);
-  }
-
-  .page-header {
-    position: relative;
   }
 }
 
