@@ -1057,3 +1057,9 @@ img {
 .section.our-features {
   padding-bottom: 0;
 }
+
+.filters .list {
+  display: flex;
+  margin-bottom: 72px;
+  justify-content: center;  
+}
