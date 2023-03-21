@@ -50,7 +50,7 @@
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/people-office\ 1.jpg);
+      url(../images/hero-bg-1x.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -328,20 +328,9 @@
     height: 8px;
   }
 
-  .site-nav-mobi .link:hover {
+  .site-nav-mobi .link:hover,
+  .site-nav-mobi .link:focus {
     color: var(--sec-header-button);
-  }
-
-  .menu-button .cross-btn {
-    display: none;
-  }
-
-  .menu-button.is-open .cross-btn {
-    display: block;
-  }
-
-  .menu-button.is-open .menu-btn {
-    display: none;
   }
 
   .mobile-menu {
@@ -349,11 +338,16 @@
   }
 
   .menu-container.is-open {
-    display: block;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
   }
 
   .menu-container {
-    display: none;
+    transition: opacity, visibility, 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -398,7 +392,6 @@
 
   .header-mobi-container {
     justify-content: center;
-    margin-top: auto;
   }
 
   .tel .link {
@@ -444,6 +437,12 @@
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
+
+    transition: 250ms color cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .site-nav-mobi {
+    margin-bottom: auto;
   }
 
   .link.active {
@@ -454,6 +453,10 @@
 @media screen and (min-width: 480px) {
   body {
     padding-top: 70px;
+  }
+
+  .container {
+    width: 428px;
   }
 
   .menu-button {
@@ -494,20 +497,9 @@
     height: 8px;
   }
 
-  .site-nav-mobi .link:hover {
+  .site-nav-mobi .link:hover,
+  .site-nav-mobi:focus {
     color: var(--sec-header-button);
-  }
-
-  .menu-button .cross-btn {
-    display: none;
-  }
-
-  .menu-button.is-open .cross-btn {
-    display: block;
-  }
-
-  .menu-button.is-open .menu-btn {
-    display: none;
   }
 
   .mobile-menu {
@@ -515,11 +507,16 @@
   }
 
   .menu-container.is-open {
-    display: block;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
   }
 
   .menu-container {
-    display: none;
+    transition: opacity, visibility, 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -530,7 +527,6 @@
   }
 
   .main-contacts-mobi {
-    /* width: 480px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -565,7 +561,6 @@
 
   .header-mobi-container {
     justify-content: center;
-    margin-top: auto;
   }
 
   .tel .link {
@@ -611,6 +606,7 @@
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
+    transition: 250ms color cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .link.active {
@@ -639,7 +635,7 @@
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/people-office\ 1.jpg);
+      url(../images/hero-bg-1x.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -697,10 +693,6 @@
   .customers-list {
     margin-bottom: -72px;
     margin-left: -16px;
-  }
-
-  .container {
-    width: 480px;
   }
 
   .container .what-are {
@@ -815,8 +807,6 @@
     margin-top: 72px;
   }
 
-  /* 2222222222222222222222222 */
-
   .footer-logo-text {
     display: flex;
     flex-direction: column;
@@ -884,6 +874,15 @@
   .section.our-customers {
     padding-top: 103px;
     padding-bottom: 96px;
+  }
+
+  .site-nav-mobi {
+    margin-bottom: auto;
+  }
+
+  .site-nav-mobi .link:focus,
+  .site-nav-mobi .link:active {
+    color: var(--accent-color);
   }
 }
 
@@ -1296,7 +1295,7 @@
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/people-office\ 1.jpg);
+      url(../images/hero-bg-1x.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
