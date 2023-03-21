@@ -51,7 +51,7 @@ img {
   display: block;
 }
 
-/* PAGE HEADER */
+/* HEADER */
 .page-header {
   position: fixed;
   top: 0;
@@ -67,46 +67,6 @@ img {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
-/* LOGO */
-.logo {
-  text-decoration: none;
-}
-
-.logo .studio,
-.logo .web {
-  font-family: "Raleway", cursive;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.33;
-  letter-spacing: 0.03em;
-  color: var(--title-text-color);
-  text-decoration: none;
-}
-
-.logo .web {
-  color: var(--accent-color);
-}
-
-.footer-logo {
-  text-decoration: none;
-}
-
-.footer-logo .web,
-.footer-logo .studio {
-  font-family: "Raleway", cursive;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.33;
-  letter-spacing: 0.03em;
-  color: var(--accent-color);
-  text-decoration: none;
-}
-
-.footer-logo .studio {
-  color: var(--sec-logo-color);
-}
-
-/* HEADER NAVIGATION AND CONTACTS */
 .main-nav {
   display: flex;
   align-items: center;
@@ -209,6 +169,45 @@ img {
   color: var(--sec-header-button);
 }
 
+/* LOGO */
+.logo {
+  text-decoration: none;
+}
+
+.logo .studio,
+.logo .web {
+  font-family: "Raleway", cursive;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  text-decoration: none;
+}
+
+.logo .web {
+  color: var(--accent-color);
+}
+
+.footer-logo {
+  text-decoration: none;
+}
+
+.footer-logo .web,
+.footer-logo .studio {
+  font-family: "Raleway", cursive;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+.footer-logo .studio {
+  color: var(--sec-logo-color);
+}
+
 /* HERO */
 .hero-title {
   margin-top: 0;
@@ -243,7 +242,7 @@ img {
   background-size: cover;
 }
 
-/* BUTTONS AND FILTERS-BUTTON */
+/* HERO BUTTON */
 .header-button {
   display: inline-block;
   padding: 16px 32px;
@@ -271,6 +270,7 @@ img {
   background-color: var(--sec-header-button);
 }
 
+/* PORTFOLIO FILTERS */
 .filters {
   display: flex;
   margin-bottom: 72px;
@@ -623,6 +623,7 @@ img {
 .customers-list .item + .item {
   margin-left: 24px;
 }
+
 /* FOOTER */
 .footer-logo-text {
   margin-right: 120px;
@@ -1028,16 +1029,17 @@ img {
 }
 
 .confirm {
-  margin-top: 16px;
   display: flex;
+  margin-top: 16px;
 }
 
 .confirm-ico {
   fill: white;
-  border: 1.25px solid #2e2f42;
-  border-radius: 2px;
+
   min-width: 16px;
   min-height: 16px;
+  border: 1.25px solid #2e2f42;
+  border-radius: 2px;
   outline: none;
 
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1060,6 +1062,6 @@ img {
 
 .filters .list {
   display: flex;
+  justify-content: center;
   margin-bottom: 72px;
-  justify-content: center;  
 }
