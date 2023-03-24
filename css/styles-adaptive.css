@@ -35,10 +35,13 @@
   .hero {
     display: flex;
     align-items: center;
+    flex-direction: column;
+    justify-content: center;
 
     margin-left: auto;
     margin-right: auto;
-    padding-top: 188px;
+    padding-top: 112px;
+    padding-bottom: 112px;
     max-width: 100%;
     height: 432px;
 
@@ -86,25 +89,26 @@
   }
 
   .customers-list .item + .item {
-    margin-left: 16px;
+    margin: 0;
+    margin-top: 72px;
   }
 
   .customers-list {
     flex-wrap: wrap;
+    flex-direction: column;
   }
 
   .customers-list .item {
-    margin-bottom: 72px;
-    margin-left: 16px;
+    margin: 0;
 
     width: 190px;
     height: 88px;
   }
 
-  .customers-list {
+  /* .customers-list {
     margin-bottom: -72px;
     margin-left: -16px;
-  }
+  } */
 
   .container {
     width: 100%;
@@ -276,7 +280,6 @@
 
   .form-input {
     margin-bottom: 16px;
-    width: 320px;
   }
 
   .link-customers {
@@ -636,12 +639,14 @@
   .hero {
     display: flex;
     align-items: center;
+    flex-direction: column;
+    justify-content: center;
 
     margin-left: auto;
     margin-right: auto;
-    padding-top: 188px;
+    padding-top: 112px;
+    padding-bottom: 112px;
     max-width: 100%;
-    height: 432px;
 
     text-align: center;
 
@@ -690,25 +695,30 @@
     max-height: 70px;
   }
 
-  .customers-list .item + .item {
+  .customers-list .item + .item:nth-child(2n) {
     margin-left: 16px;
+  }
+
+  .customers-list .item + .item:nth-child(1n) {
+    margin-top: 72px;
+  }
+
+  .customers-list .item + .item:nth-child(2) {
+    margin-top: 0;
+  }
+
+  .customers-list .item + .item {
+    margin: 0;
   }
 
   .customers-list {
     flex-wrap: wrap;
+    flex-direction: row;
   }
 
   .customers-list .item {
-    margin-bottom: 72px;
-    margin-left: 16px;
-
     width: 190px;
     height: 88px;
-  }
-
-  .customers-list {
-    margin-bottom: -72px;
-    margin-left: -16px;
   }
 
   .container .what-are {
@@ -884,7 +894,7 @@
 
   .section.our-team {
     padding-top: 96px;
-    padding-bottom: 128px;
+    padding-bottom: 84px;
   }
 
   .section.our-customers {
@@ -963,22 +973,48 @@
   }
 
   .customers-list .item {
-    margin-left: 24px;
-    margin-top: 72px;
     width: 168px;
-    margin-bottom: 0;
-  }
-
-  .customers-list .item + .item {
-    margin-left: 24px;
-    margin-top: 72px;
-    margin-bottom: 0;
   }
 
   .customers-list {
-    margin-left: -24px;
-    margin-top: -72px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 552px;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 0;
+  }
+
+  .section.our-customers .container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .customers-list .item + .item {
+    margin-top: 72px;
+    margin-left: 24px;
+  }
+
+  .customers-list .item + .item:nth-child(1n) {
+    margin: 0;
+    margin-top: 72px;
+    margin-left: 24px;
+  }
+
+  .customers-list .item + .item:nth-child(4) {
+    margin-left: 0;
+  }
+
+  .customers-list .item + .item:nth-child(1) {
+    margin-top: 0;
+  }
+
+  .customers-list .item + .item:nth-child(2) {
+    margin-top: 0;
+  }
+
+  .customers-list .item + .item:nth-child(3) {
+    margin-top: 0;
   }
 
   .container.wrapper {
@@ -1248,19 +1284,19 @@
   }
 
   .customers-list .item {
-    margin-left: initial;
-    margin-top: initial;
+    margin-left: 0;
+    margin-top: 0;
     width: 168px;
-    margin-bottom: initial;
+    margin-bottom: 0;
   }
 
-  .customers-list .item + .item {
+  .customers-list .item + .item:nth-child(1n) {
+    margin: 0;
     margin-left: 24px;
-    margin-top: initial;
-    margin-bottom: initial;
   }
 
   .customers-list {
+    width: 100%;
     margin-left: initial;
     margin-top: initial;
     margin-bottom: initial;
