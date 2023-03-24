@@ -1030,10 +1030,12 @@ img {
 
 .confirm {
   display: flex;
-  margin-top: 16px;
 }
 
 .confirm-ico {
+  display: block;
+  width: 16px;
+  height: 16px;
   fill: white;
 
   min-width: 16px;
@@ -1050,10 +1052,9 @@ img {
   border: none;
 }
 
-.confirm-ico {
-  display: block;
-  width: 16px;
-  height: 16px;
+.checkbox-container {
+  display: flex;
+  margin-top: 18px;
 }
 
 .section.our-features {
