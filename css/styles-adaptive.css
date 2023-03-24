@@ -114,6 +114,18 @@
     display: none;
   }
 
+  .modal {
+    max-width: 90%;
+  }
+
+  .modal-form-container .item {
+    width: 100%;
+  }
+
+  .modal-placeholder {
+    width: 100%;
+  }
+
   .team-list .title {
     text-align: center;
 
@@ -126,6 +138,10 @@
     letter-spacing: 0.02em;
 
     color: var(--title-text-color);
+  }
+
+  .modal-textarea {
+    width: 100%;
   }
 
   .feature-list .item::before {
@@ -248,8 +264,8 @@
 
   .container.wrapper {
     display: block;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 96px;
+    padding-bottom: 96px;
   }
 
   .form-field {
@@ -282,7 +298,7 @@
 
   .section.our-team {
     padding-top: 96px;
-    padding-bottom: 128px;
+    padding-bottom: 84px;
   }
 
   .section.our-customers {
@@ -396,7 +412,7 @@
 
   .tel .link {
     font-weight: 700;
-    font-size: 36px;
+    font-size: 24px;
     line-height: 1.11;
 
     color: var(--accent-color);
@@ -422,7 +438,7 @@
   }
 
   .svg-container-mobi .item + .item {
-    margin-left: 56px;
+    margin-left: 46px;
   }
 
   .social-mobi {
@@ -834,8 +850,8 @@
 
   .container.wrapper {
     display: block;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 96x;
+    padding-bottom: 96px;
   }
 
   .form-field {
